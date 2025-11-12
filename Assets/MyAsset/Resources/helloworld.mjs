@@ -1,2 +1,2 @@
-import { world } from 'lib.mjs'
-console.log('hello ' + world);
+require("lib.mjs");
+"Hello World How're you're doing?";
