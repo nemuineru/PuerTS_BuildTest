@@ -1,0 +1,4 @@
+PUERTSの利用について - 
+xLuaのDoStringに当たるものがeval<T>であるが、それ以外としてExecuteModuleが存在する.
+jsEnvにnew PuerTsLoader()を指定してコンパイル済みのファイルを設定するべきか？
+とりあえずeval()でどこまで出来るか試す. 速度検証も兼ね、色々やってみよう
