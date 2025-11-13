@@ -15,19 +15,19 @@ public class PuerTS_LoadViaAsset : MonoBehaviour
 
     public TextAsset textAsset;
     Puerts.JsEnv env;
-    TSLoader ld;
+
+    Puerts.JSObject jS;
     //1. Hello World
-    void Start()
-    {
+    void Start() {
         env = new Puerts.JsEnv();
-        ld = new TSLoader("");
     }
 
     // Update is called once per frame
     void Update()
     {
         float TrackX = 0f;
-
-        text.text = env.Eval<string>("require('helloworld')");
+        env.ExecuteModule("helloworld.mjs");
+        
+        text.text = "";
     }
 }

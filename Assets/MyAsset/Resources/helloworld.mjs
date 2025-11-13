@@ -1,2 +1,2 @@
-require("lib.mjs");
-"Hello World How're you're doing?";
+import { time } from 'lib.mjs';
+console.log("Hello, " + time +  " How're you're doing?");

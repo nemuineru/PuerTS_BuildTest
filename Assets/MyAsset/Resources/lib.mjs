@@ -1,2 +1,3 @@
 const world = 'puerts'
-export { world }
+const time = CS.UnityEngine.Time.deltaTime
+export { time }
